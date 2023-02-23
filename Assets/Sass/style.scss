@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    widows: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 60vw;
+    height: 65vh;
+    background: url(../Imgs/pared.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 30px solid #192b19;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    display: none;
+}
+
+.nuvens{
+    img{
+        position: absolute;
+    }
+    position: absolute;
+    animation: nuven 15s infinite linear;
+}
+
+.fox{
+    position: absolute;
+    animation: vilao 35s infinite linear;
+    top: 60px;
+}
+
+.vilao{
+    position: absolute;
+    bottom: -6px;
+
+    animation: vilao 2.5s infinite linear;
+}
+
+.prota{
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+}
+
+.pulo{
+    animation: pulo 700ms ease-out;
+}
+
+@keyframes vilao {
+    from{
+        right: -15%;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes nuven {
+    from{
+        left: -70%;
+    }
+
+    to{
+        left: 150%;
+    }
+}
+
+@keyframes pulo{
+    0%{
+        bottom: 0;
+    }
+
+    45%{
+        bottom: 110px;
+    }
+
+    50%{
+        bottom: 110px;
+    }
+
+    70%{
+        bottom: 110px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+
+.inicio{
+    width: 60vw;
+    height: 65vh;
+    background-color: #0080007c;
+    border-radius: 15px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button{
+        font-size: 20pt;
+        padding: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        background-color: #18181fd2;
+        cursor: pointer;
+
+        &:hover{
+           background-color: #00000052;
+        }
+    }
+}
+
+.fim{
+    width: 60vw;
+    height: 65vh;
+    background-color: #8000007c;
+    border-radius: 15px;
+    border: 1px solid #000;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    color: #fff;
+
+    h1{
+        font-size: 30pt;
+    }
+
+    button{
+        font-size: 20pt;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        background-color: #18181fd2;
+        cursor: pointer;
+
+        &:hover{
+           background-color: #00000052;
+        }
+    }
+}
