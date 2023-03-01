@@ -149,4 +149,19 @@ main {
   background-color: rgba(0, 0, 0, 0.3215686275);
 }
 
+.placar {
+  width: 200px;
+  height: 50px;
+  background-color: #2c2f38;
+  border-bottom-right-radius: 15px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.placar p {
+  color: #fff;
+  font-size: 15pt;
+}
+
 /*# sourceMappingURL=style.css.map */
